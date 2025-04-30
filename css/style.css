@@ -553,6 +553,39 @@ h3 {
    Responsive Design
    ======================= */
 
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  header nav a {
+    display: block;
+    margin: 0.5em 0;
+    font-size: 1.2em;
+  }
+  .educacion-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .educacion-card {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  body {
+    font-size: 14px;
+    padding: 0.5em;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+}
+
+
 /* Teléfonos */
 @media screen and (max-width: 480px) {
 	.nav {
@@ -590,6 +623,25 @@ h3 {
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		gap: var(--m-1-5);
 	}
+
+	.educacion-container {
+    	flex-direction: column;
+    	align-items: center;
+  	}
+
+  	.educacion-card {
+    	width: 90%;
+    	margin-bottom: 1em;
+  	}
+
+  	body {
+    	font-size: 14px;
+    	padding: 0.5em;
+  	}
+
+  	header h1 {
+    	font-size: 1.5em;
+  	}
 }
 
 /*=== Dark Theme ===*/
