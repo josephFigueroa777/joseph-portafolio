@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--=== CSS ===-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--=== ICONO ===-->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<title>Portafilio Joseph</title>
+</head>
+<body>
+	<!--=== header ===-->
+	<header class="header" id="header">
+		<!--=== nav ===-->
+		<nav class="nav container padd-15">
+			<a href="index.html" class="nav-logo">
+				<h2>Joseph</h2>
+			</a>
+
+			<!--=== nav menu ===-->
+			<div class="nav-menu" id="nav-menu">
+
+				<!--=== nav list ===-->
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="educacion.html" class="nav-link">Educación</a>
+					</li>
+					<li class="nav-item">
+						<a href="proyectos.html" class="nav-link">Proyectos</a>
+					</li>
+				</ul>
+			</div>
+			<!--=== iconos ===-->
+				<div class="nav-btns">
+          			<i class='bx bx-sun' id="theme-button"></i>
+					<div class="nav-toggle" id="nav-toggle">
+						<i class='bx bx-border-all'></i>
+					</div>
+				</div>
+		</nav>
+	</header>
+	<main class="main-content">
+		<section class="home" id="home">
+			<div class="container">
+				<div class="intro">
+					<!--=== imagen ===-->
+					<img src="img/joseph.jpg" alt="Foto de Joseph Figueroa Romero"> 
+					<!--=== info ===-->
+					<h1>Joseph Figueroa Romero</h1>
+					<span>Soy un <span class="info-text">Desarrollador de Website</span></span>
+					<!--=== social iconos ===-->
+					<ul class="social-icons">
+						<li><a href="https://www.linkedin.com/in/joseph-figueroa-romero-736649363/" target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
+						<li><a href="https://www.instagram.com/hpesoj_14?igsh=MWFpbmpoOHBvMGJwbQ%3D%3D&utm_source=qr" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+						<li><a href="https://youtube.com/@unlocoprogramando?si=uJOE8XZ7k7c7IHHj" target="_blank"><i class='bx bxl-youtube'></i></a></li>
+					</ul>
+					<div>
+						<a href="educacion.html" class="btn btn-default">Hire me</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+	<script>
+		// Toggle menú móvil
+		const toggleBtn = document.getElementById('nav-toggle');
+		const navMenu = document.getElementById('nav-menu');
+
+		toggleBtn.addEventListener('click', () => {
+			navMenu.classList.toggle('show');
+		});
+
+		// Toggle dark mode + cambio de icono
+		const themeButton = document.getElementById('theme-button');
+		const body = document.body;
+	const darkThemeClass = 'dark-theme';
+
+	themeButton.addEventListener('click', () => {
+    	body.classList.toggle(darkThemeClass);
+
+    	// Cambiar el icono
+    	if (body.classList.contains(darkThemeClass)) {
+        	themeButton.classList.remove('bx-sun');
+        	themeButton.classList.add('bxs-moon');
+    	} else {
+        	themeButton.classList.remove('bxs-moon');
+        	themeButton.classList.add('bx-sun');
+    	}
+	});
+	</script>
+</body>
+</html>

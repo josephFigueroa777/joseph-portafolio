@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--=== CSS ===-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--=== ICONO ===-->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<title>Portafilio Joseph</title>
+</head>
+<body>
+	<!--=== header ===-->
+	<header class="header" id="header">
+		<!--=== nav ===-->
+		<nav class="nav container padd-15">
+			<a href="index.html" class="nav-logo">
+				<h2>Joseph</h2>
+			</a>
+
+			<!--=== nav menu ===-->
+			<div class="nav-menu" id="nav-menu">
+
+				<!--=== nav list ===-->
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="educacion.html" class="nav-link">Educación</a>
+					</li>
+					<li class="nav-item">
+						<a href="proyectos.html" class="nav-link">Proyectos</a>
+					</li>
+				</ul>
+			</div>
+			<!--=== iconos ===-->
+				<div class="nav-btns">
+					<i class='bx bx-sun' id="theme-button"></i>
+					<div class="nav-toggle" id="nav-toggle">
+						<i class='bx bx-border-all'></i>
+					</div>
+				</div>
+		</nav>
+	</header>
+	<main class="main-content">
+	<section class="blog-section container padd-15">
+		<div class="blog-grid" style="margin-top: 100px;">
+			<!-- Artículo 1 -->
+			<a href="https://vetcamp.upra.edu/credits" class="blog-card" target="_blank">
+				<h3>Plataforma Vetcamp</h3>
+				<p>Programación de una página para un campamento de la universidad de Puerto Rico en Arecibo fui parte del equipo de desarrollo y usé las tecnologías HTML, CSS y PHP.</p>
+				<div class="blog-card-footer">
+    				<span class="like"><i class='bx bxs-dog'></i>VetCamp</span>
+  				</div>
+			</a>
+
+			<!-- Artículo N 
+			<a href="articuloN.html" class="blog-card">
+  				<h3>El tema N</h3>
+  				<p>La descripción breve del proyecto N</p>
+  				<div class="blog-card-footer">
+    				<span class="like"><i class='bx bx-like'></i>Buscar un icono que pueda visualizar la idea del proyecto N</span>
+  				</div>
+			</a> -->
+
+		</div>
+	</section>
+</main>
+<script>
+		// Toggle menú móvil
+		const toggleBtn = document.getElementById('nav-toggle');
+		const navMenu = document.getElementById('nav-menu');
+
+		toggleBtn.addEventListener('click', () => {
+			navMenu.classList.toggle('show');
+		});
+
+		// Toggle dark mode + cambio de icono
+		const themeButton = document.getElementById('theme-button');
+		const body = document.body;
+	const darkThemeClass = 'dark-theme';
+
+	themeButton.addEventListener('click', () => {
+    	body.classList.toggle(darkThemeClass);
+
+    	// Cambiar el icono
+    	if (body.classList.contains(darkThemeClass)) {
+        	themeButton.classList.remove('bx-sun');
+        	themeButton.classList.add('bxs-moon');
+    	} else {
+        	themeButton.classList.remove('bxs-moon');
+        	themeButton.classList.add('bx-sun');
+    	}
+	});
+</script>
+</body>
+</html>
