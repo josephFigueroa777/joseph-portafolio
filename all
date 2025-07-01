@@ -48,13 +48,54 @@
 	</header>
 	<main class="educacionMain" id="educacionMain">
 		<div class="containerEducacion" style="margin: 100px;">
-			<div class="right_side">
+			<div class="left_side">
+				<!--=== Contenido de la izquierda ===-->
 				<div class="profiletext">
 					<div class="imagebx">
 						<img src="img/joseph.jpg" alt="Foto de Joseph Figueroa Romero">
 					</div>
-					<h2>Joseph Figueroa Romero <br><span>Soy un <span class="info-text">científico de datos</span></span> </h2>
+					<h2>Joseph Figueroa Romero <br><span>Soy un <span class="info-text">Desarrollador de Website</span></span> </h2>
 				</div>
+				<div class="contactInfo">
+					<h3 class="title">Contact info</h3>
+					<ul>
+						<li>
+							<span class="icon"><i class='bx bxs-phone'></i></span>
+							<span>Al ser solicitado</span>
+						</li>
+						<li>
+							<span class="icon"><i class='bx bxs-envelope' ></i></span>
+							<span>joseph.figueroa4@upr.edu</span>
+						</li>
+						<li>
+							<span class="icon"><i class='bx bx-world'></i></span>
+							<span><a href="https://www.unpocoprogramando.com/" style="color: hsl(252, 30%, 92%);" target="_blank">Un Website de Vim</a></span>
+						</li>
+						<li>
+							<span class="icon"><i class='bx bxl-linkedin-square'></i></i></span>
+							<span><a href="https://www.linkedin.com/in/joseph-figueroa-romero-736649363/" style="color: hsl(252, 30%, 92%);" target="_blank">Joseph Figueroa</a></span>
+						</li>
+						<li>
+							<span class="icon"><i class='bx bxs-pin' ></i></span>
+							<span>Ciales, Puerto Rico 00638</span>
+						</li>
+					</ul>
+				</div>
+				<div class="contactInfo lenguajes">
+					<h3 class="title">Lenguajes</h3>
+					<ul>
+						<li>
+							<span class="text">Español</span>
+							<span class="percent"><div style="width: 90%;"></div></span>
+						</li>
+						<li>
+							<span class="text">Ingles</span>
+							<span class="percent"><div style="width: 40%;"></div></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right_side">
 				<!--=== Contenido de la derecha ===-->
 				<div class="about">
 					<h2 class="title2">Perfil</h2>
@@ -121,38 +162,10 @@
 				<div class="about interest">
 					<h2 class="title2">Intereses</h2>
 					<ul>
-						<li><i class='bx bxs-lock'></i><strong>Seguridad cibernética</strong></li>
-						<li><i class='bx bx-code'></i><strong>Programación Web</strong></li>
-						<li><i class='bx bxs-game'></i><strong>Desarrollo de videojuegos</strong></li>
-						<li><i class='bx bxs-book-alt'></i><strong>Literatura</strong></li>
-					</ul>
-				</div>
-			</div>
-			<div class="left_side">
-				<!--=== Contenido de la izquierda ===-->
-				<div class="contactInfo">
-					<h3 class="title">Contact info</h3>
-					<ul>
-						<li>
-							<span class="icon"><i class='bx bxs-phone'></i></span>
-							<span>Al ser solicitado</span>
-						</li>
-						<li>
-							<span class="icon"><i class='bx bxs-envelope' ></i></span>
-							<span>joseph.figueroa4@upr.edu</span>
-						</li>
-						<li>
-							<span class="icon"><i class='bx bx-world'></i></span>
-							<span><a href="https://www.unpocoprogramando.com/" style="color: hsl(252, 30%, 92%);" target="_blank">Un Website de Vim</a></span>
-						</li>
-						<li>
-							<span class="icon"><i class='bx bxl-linkedin-square'></i></i></span>
-							<span><a href="https://www.linkedin.com/in/joseph-figueroa-romero-736649363/" style="color: hsl(252, 30%, 92%);" target="_blank">Joseph Figueroa</a></span>
-						</li>
-						<li>
-							<span class="icon"><i class='bx bxs-pin' ></i></span>
-							<span>Ciales, Puerto Rico 00638</span>
-						</li>
+						<li><i class='bx bxs-lock'></i>Seguridad cibernética</li>
+						<li><i class='bx bx-code'></i>Programación Web</li>
+						<li><i class='bx bxs-game'></i>Desarrollo de videojuegos</li>
+						<li><i class='bx bxs-book-alt'></i>Literatura</li>
 					</ul>
 				</div>
 			</div>
